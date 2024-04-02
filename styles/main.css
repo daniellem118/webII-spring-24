@@ -1,0 +1,24 @@
+header {
+    background-color: #35523b; 
+    padding: 15px;
+    margin-top: 25px;
+    display: block;
+}
+
+.navigation nav a {
+    color: white;
+}
+
+.active{
+    text-decoration: none;
+}
+
+.paragraph{
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+}
+
+.image {
+    display: inline-block;
+}
