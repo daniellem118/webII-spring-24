@@ -1,0 +1,35 @@
+@use "./vendor/normalize";
+
+$primary-color: rgb(35, 75, 45)
+
+.navigation {
+    background-color: rgb(35, 75, 45);
+    padding: 15px;
+}
+
+.navigation nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation {
+    background-color: rgb(33, 68, 38);
+    padding: 15px;
+    nav {
+        a {
+            color: white;
+            text-emphasis: none;
+            &:hover {
+                color: rgb(70, 49, 31);
+            }
+        }
+    }
+}
+
+//big screens
+@media (min-width: 1024px;) {
+    .navigation {
+        background-color: rgb(28, 66, 28);
+    }
+}
+
