@@ -1,6 +1,6 @@
 @use "./vendor/normalize";
-
-$primary-color: rgb(35, 75, 45)
+@use "./partials/colors";
+@use "./partials/typography";
 
 .navigation {
     background-color: rgb(35, 75, 45);
@@ -24,6 +24,28 @@ $primary-color: rgb(35, 75, 45)
             }
         }
     }
+}
+
+.title{
+    font-family: typography.$font-dosis;
+}
+
+.btn-primary {
+    background-color: colors.$primary-color;
+    color: white;
+}
+
+.footer {
+    background-color: colors.$dark-color;
+    color: #150300
+}
+
+.title{
+    font-family: typography.$font-marck;
+}
+
+.paragraph{
+    font-family: $font-dosis;
 }
 
 //big screens
