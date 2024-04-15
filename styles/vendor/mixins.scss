@@ -1,0 +1,9 @@
+@use "./typography";
+@use "./colors";
+
+@mixin title($color) {
+    font-family: typography.$font-marck;
+    color: $color;
+    font-size: $size;
+    margin: 5px 0px;
+}

@@ -1,9 +1,10 @@
 @use "./vendor/normalize";
 @use "./partials/colors";
 @use "./partials/typography";
+@use "./partials/mixins";
 
 .navigation {
-    background-color: rgb(35, 75, 45);
+    background-color: tomato
     padding: 15px;
 }
 
@@ -13,21 +14,30 @@
 }
 
 .navigation {
-    background-color: rgb(33, 68, 38);
+    background-color: colors.$primary-color
     padding: 15px;
     nav {
         a {
             color: white;
             text-emphasis: none;
             &:hover {
-                color: rgb(70, 49, 31);
+                color: #414141;
             }
+        }
+        .active {
+            text-decoration: underline;
         }
     }
 }
 
+
+
 .title{
     font-family: typography.$font-dosis;
+}
+
+main{
+    padding: 10px;
 }
 
 .btn-primary {
@@ -41,17 +51,28 @@
 }
 
 .title{
-    font-family: typography.$font-marck;
+    @include mixins.titles(navy, 20px);
+
+}
+
+.second-title{
+   @include mixins.titles(tomato, 50px);
 }
 
 .paragraph{
     font-family: $font-dosis;
 }
 
+@media (min-width: 768px) {
+    .navigation{
+        background-color: red;
+    }
+}
+
 //big screens
 @media (min-width: 1024px;) {
     .navigation {
-        background-color: rgb(28, 66, 28);
+        background-color: #150300
     }
 }
 
