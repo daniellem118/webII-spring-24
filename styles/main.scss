@@ -5,7 +5,7 @@
 
 .navigation {
     background-color: tomato
-    padding: 15px;
+    padding; 15px;
 }
 
 .navigation nav a {
@@ -15,11 +15,11 @@
 
 .navigation {
     background-color: colors.$primary-color
-    padding: 15px;
+    padding; 15px;
     nav {
         a {
             color: white;
-            text-emphasis: none;
+            text-decoration: none;
             &:hover {
                 color: #414141;
             }
@@ -38,6 +38,57 @@
 
 main{
     padding: 10px;
+}
+
+.container {
+     display: flex;
+     //flex-direction: row;
+     flex-wrap: wrap;
+     //flex-flow: row wrap;
+     //align-content: flex-end;
+     //justify-content: space-around;
+     //align-items: center;
+     //border: 1px solid;
+     //padding: 10px;
+     //height: 800px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    flex 1;
+}
+
+.first, .second, .third, {
+    border: 1px solid;
+    color: white;
+    width: 320px;
+    height: 100px;
+}
+
+.first {
+    background-color: rgb(39, 111, 87);
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+.second {
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.third {
+    background-attachment: navy;
+    flex-grow: 2;
 }
 
 .btn-primary {
@@ -63,6 +114,8 @@ main{
     font-family: $font-dosis;
 }
 
+
+//medium screens
 @media (min-width: 768px) {
     .navigation{
         background-color: red;
@@ -73,6 +126,9 @@ main{
 @media (min-width: 1024px;) {
     .navigation {
         background-color: #150300
+    }
+   .container {
+        flex-direction: row;
     }
 }
 
