@@ -1,7 +1,7 @@
 @use "./typography";
 @use "./colors";
 
-@mixin title($color) {
+@mixin title($color, $size) {
     font-family: typography.$font-marck;
     color: $color;
     font-size: $size;
